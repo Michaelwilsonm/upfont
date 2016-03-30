@@ -8,6 +8,9 @@
         <h1 style="<%= f.font_family %>"><%= f.name %></h1>
         <p><%= f.weight %></p>
         <p>Created by <%= f.styles_by %></p>
+        <%= f.get_upvotes.size %>
+        <%= link_to upvote_site_path(f), method: :post, class: "fa fa-arrow-circle-o-up fa-2x" do %><br>
+        <% end %>
       </div>
     <% end %>
   </div>

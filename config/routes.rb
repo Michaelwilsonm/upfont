@@ -1,3 +1,11 @@
 Rails.application.routes.draw do
-  root 'site#index'
+
+
+  resources :site, :path => '/' do
+    member do
+      post :upvote
+    end
+  end
+
+
 end
