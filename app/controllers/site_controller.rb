@@ -12,8 +12,7 @@ class SiteController < ApplicationController
     @voter = Session.find_or_create_by(ip: session[:voting_id])
     @voter.likes @font
     respond_to do |format|
-      format.html { redirect_to :back }
-      format.js
+      format.json { render json: @font }
     end
   end
 
