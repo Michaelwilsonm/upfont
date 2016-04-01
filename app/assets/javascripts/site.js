@@ -35,10 +35,85 @@ $(document).ready(function(){
       success: function(data){
       },
       error: function(error){
-        console.log("error")
+        console.log("error, already voted")
       }
     })
   })
+
+  $(".red-square").hover(function(){
+    var id = $(this).attr("id")
+    var headerTitle = $("h1" + "#" + id)
+    headerTitle.css({"color": "#F44336"})
+    $(this).css({"background-color": "#D32F2F"})
+  },function(){
+    var id = $(this).attr("id")
+    var headerTitle = $("h1" + "#" + id)
+    headerTitle.css({"color": "#111"})
+    $(this).css({"background-color": "#F44336"})
+  })
+
+  $(".green-square").hover(function(){
+    var id = $(this).attr("id")
+    var headerTitle = $("h1" + "#" + id)
+    headerTitle.css({"color": "#8Bc34a"})
+    $(this).css({"background-color": "#8BC34A"})
+  },function(){
+    var id = $(this).attr("id")
+    var headerTitle = $("h1" + "#" + id)
+    headerTitle.css({"color": "#111"})
+    $(this).css({"background-color": "#689F38"})
+  })
+
+  $(".yellow-square").hover(function(){
+    var id = $(this).attr("id")
+    var headerTitle = $("h1" + "#" + id)
+    headerTitle.css({"color": "#ffeb3b"})
+    $(this).css({"background-color": "#FBC02D"})
+  },function(){
+    var id = $(this).attr("id")
+    var headerTitle = $("h1" + "#" + id)
+    headerTitle.css({"color": "#111"})
+    $(this).css({"background-color": "#ffeb3b"})
+  })
+
+  $(".purple-square").hover(function(){
+    var id = $(this).attr("id")
+    var headerTitle = $("h1" + "#" + id)
+    headerTitle.css({"color": "#673ab7"})
+    $(this).css({"background-color": "#7B1FA2"})
+  },function(){
+    var id = $(this).attr("id")
+    var headerTitle = $("h1" + "#" + id)
+    headerTitle.css({"color": "#111"})
+    $(this).css({"background-color": "#673ab7"})
+  })
+
+// $(document).ready(function(){
+//     $("p").hover(function(){
+//         $(this).css("background-color", "yellow");
+//         }, function(){
+//         $(this).css("background-color", "pink");
+//     });
+// });
+
+//red F44336
+//green #8BC34A;
+//yellow #FFEB3B;
+//purple #673AB7
+          // <ul class="squares">
+          //   <li><div class="red-square"></div></li>
+          //   <li><div class="green-square"></div></li>
+          //   <li><div class="yellow-square"></div></li>
+          //   <li><div class="purple-square"></div></li>
+          // </ul>
+
+
+
+
+
+
+
+
 
 
 })
