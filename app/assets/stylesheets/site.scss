@@ -45,10 +45,11 @@ html, body {
 }
 
 .box {
-  margin-top: 150px;
+  margin-top: 60px;
   width: 300px;
   height: 250px;
   padding: 0px;
+  margin-bottom: 100px;
 }
 
 div.content {
@@ -108,3 +109,36 @@ div.side {
   border-radius: 25px;
   margin: 10px;
 }
+
+.sideh1 {
+  text-align: middle;
+  margin-top: 70px;
+  font-family: 'Raleway', sans-serif;
+  opacity: 0.8;
+}
+
+i {
+  position: absolute;
+  color: #F48FB1;
+  left: 75px;
+  top: 85px;
+  z-index: -1;
+}
+
+.left {
+  list-style-type: none;
+  margin-top: 80px;
+}
+
+.left>li {
+  margin: 10px 0px 0px 20px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+}
+
+
+
+
+
+
+

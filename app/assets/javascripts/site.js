@@ -87,33 +87,4 @@ $(document).ready(function(){
     headerTitle.css({"color": "#111"})
     $(this).css({"background-color": "#673ab7"})
   })
-
-// $(document).ready(function(){
-//     $("p").hover(function(){
-//         $(this).css("background-color", "yellow");
-//         }, function(){
-//         $(this).css("background-color", "pink");
-//     });
-// });
-
-//red F44336
-//green #8BC34A;
-//yellow #FFEB3B;
-//purple #673AB7
-          // <ul class="squares">
-          //   <li><div class="red-square"></div></li>
-          //   <li><div class="green-square"></div></li>
-          //   <li><div class="yellow-square"></div></li>
-          //   <li><div class="purple-square"></div></li>
-          // </ul>
-
-
-
-
-
-
-
-
-
-
 })

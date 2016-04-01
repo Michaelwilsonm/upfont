@@ -6,7 +6,6 @@
 #   cities = City.create([{name:: 'Chicago' }, {name:: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-Font.create(name: "Candal", font_family: "font-family: 'Candal', sans-serif;", weight: "Normal 400", styles_by: "Vernon Adams")
 
 Font.create(name: "Indie Flower", font_family: "font-family: 'Indie Flower', cursive;", weight: "Normal 400", styles_by: "Kimberly Geswein")
 
@@ -23,6 +22,8 @@ Font.create(name: "Amatic SC", font_family: "font-family: 'Amatic SC', cursive;"
 Font.create(name: "Chewy", font_family: "font-family: 'Chewy', cursive;", weight: "Normal 400", styles_by: "Sideshow")
 
 Font.create(name: "Orbitron", font_family: "font-family: 'Orbitron', sans-serif;", weight: "Normal 400, Medium 500, Bold 700, Ultra Bold 900", styles_by: "Matt McInerney")
+
+Font.create(name: "Candal", font_family: "font-family: 'Candal', sans-serif;", weight: "Normal 400", styles_by: "Vernon Adams")
 
 Font.create(name: "Rock Salt", font_family: "font-family: 'Rock Salt', cursive;", weight: "Normal 400", styles_by: "Sideshow")
 
