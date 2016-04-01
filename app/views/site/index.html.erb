@@ -9,16 +9,14 @@
         <p><%= f.weight %></p>
         <p>Created by <%= f.styles_by %></p>
         <% if @voter.voted_for? f %>
-          <%= link_to upvote_site_path(f), method: :post, class: "fa fa-arrow-circle-o-up fa-2x liked", id: f.id do %>
-        <% end %>
-          <p style="font-family: 'Montserrat', sans-serif; color: #E91E63;"><%= pluralize(f.get_upvotes.size, "vote") %></p>
+          <a class="fa fa-arrow-circle-o-up fa-2x liked" id="<%= f.id %>" href="javascript: void(0)"></a>
+          <p class="votes" style="font-family: 'Montserrat', sans-serif; color: #E91E63;"><%= pluralize(f.get_upvotes.size, "vote") %></p>
         <% else %>
-          <%= link_to upvote_site_path(f), method: :post, class: "fa fa-arrow-circle-o-up fa-2x", id: f.id do %>
+          <%= link_to upvote_site_path(f), method: :post, class: "fa fa-arrow-circle-o-up fa-2x non-clicked", id: f.id do %>
         <% end %>
-          <p style="font-family: 'Montserrat', sans-serif;"><%= pluralize(f.get_upvotes.size, "vote") %></p>
+          <p class="votes" style="font-family: 'Montserrat', sans-serif;"><%= pluralize(f.get_upvotes.size, "vote") %></p>
         <% end %>
       </div>
     <% end %>
   </div>
 </div>
-

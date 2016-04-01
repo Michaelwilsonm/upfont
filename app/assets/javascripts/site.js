@@ -13,34 +13,32 @@ $(function() {
 
 $(document).ready(function(){
 
-  $("a.fa").click(function(event){
+  $(".fa.fa-arrow-circle-o-up.fa-2x.non-clicked").click(function(event){
     event.preventDefault()
     event.stopPropagation();
     var href = $(this).attr("href")
     var id = $(this).attr("id")
+    var voteCount = parseInt($(this).next(".votes").html().split(" ")[0])
+    $(this).removeClass("non-clicked").addClass("liked")
+    $(this).next(".votes").css({"color": "#E91E63"})
+
+    if ($(this).attr("href") == "/" + id + "/upvote" ) {
+      $(this).next(".votes").text(voteCount + 1 + " votes")
+    }
+
+    $(this).attr("href", "javascript: void(0)")
 
     $.ajax({
       type: "POST",
       url: href,
       data: id,
       success: function(data){
-
+      },
+      error: function(error){
+        console.log("error")
       }
     })
   })
-
-
-
-  // $('.vote-button').click(function(e) {
-  //   e.preventDefault()
-  //   var aRefClicked = $(this).attr("href")
-  //   var id = $(this).data("id")
-  //   alert("Your post is being processed : " + aRefClicked)
-  //   var postNumber = (aRefClicked.match(/\d+/)[0])
-  //   var currentPoints = parseInt($("#" + postNumber + " .points").text())
-  //   $("#" + postNumber + " .points").text(currentPoints +1)
-  //   $("#" + postNumber + " .points").css("color", "#1F3D99")
-
 
 
 })
