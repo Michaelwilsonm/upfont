@@ -50,17 +50,21 @@ $(document).ready(function(){
 
   function hoverColors(){
     $(".squares>li>div").hover(function(){
-      var id = $(this).attr("id")
+      var id = $(this).closest("ul").attr("id")
+      console.log(id)
       var headerTitle = $("h1" + "#" + id)
+      headerTitle.css({"color": "red"})
+      console.log(headerTitle)
+      var divEle = $(this)
 
       if ($(this).hasClass("red-square")) {
-        redSquare(headerTitle)
+        redSquare(headerTitle, divEle)
       }else if ($(this).hasClass("green-square")) {
-        greenSquare(headerTitle)
+        greenSquare(headerTitle, divEle)
       }else if ($(this).hasClass("purple-square")) {
-        purpleSquare(headerTitle)
+        purpleSquare(headerTitle, divEle)
       }else if ($(this).hasClass("yellow-square")) {
-        yellowSquare(headerTitle)
+        yellowSquare(headerTitle, divEle)
       }
     },function(){
       $(".red-square").css({"background-color": RED})
@@ -71,24 +75,24 @@ $(document).ready(function(){
     })
   }
 
-  function redSquare(headerTitle){
+  function redSquare(headerTitle, divelement){
     headerTitle.css({"color": RED})
-    $(".red-square").css({"background-color": "#D32F2F"})
+    divelement.css({"background-color": "#D32F2F"})
   }
 
-  function greenSquare(headerTitle){
+  function greenSquare(headerTitle, divelement){
     headerTitle.css({"color": GREEN})
-    $(".green-square").css({"background-color": "#689F38"})
+    divelement.css({"background-color": "#689F38"})
   }
 
-  function purpleSquare(headerTitle){
+  function purpleSquare(headerTitle, divelement){
     headerTitle.css({"color": PURPLE})
-    $(".purple-square").css({"background-color": "#7B1FA2"})
+    divelement.css({"background-color": "#7B1FA2"})
   }
 
-  function yellowSquare(headerTitle){
+  function yellowSquare(headerTitle, divelement){
     headerTitle.css({"color": YELLOW})
-    $(".yellow-square").css({"background-color": "#FBC02D"})
+    divelement.css({"background-color": "#FBC02D"})
   }
 
   hoverColors()

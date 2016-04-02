@@ -14,11 +14,11 @@
         <h1 id="<%= f.id %>" style="<%= f.font_family %>"><%= f.name %></h1>
         <p><%= f.weight %></p>
         <p>Created by <%= f.styles_by %></p>
-          <ul class="squares">
-            <li><div class="red-square" id="<%= f.id %>"></div></li>
-            <li><div class="green-square" id="<%= f.id %>"></div></li>
-            <li><div class="yellow-square" id="<%= f.id %>"></div></li>
-            <li><div class="purple-square" id="<%= f.id %>"></div></li>
+          <ul class="squares" id="<%= f.id %>">
+            <li><div class="red-square"></div></li>
+            <li><div class="green-square"></div></li>
+            <li><div class="yellow-square"></div></li>
+            <li><div class="purple-square"></div></li>
           </ul>
         <% if @voter.voted_for? f %>
           <a class="fa fa-arrow-circle-o-up fa-2x liked" id="<%= f.id %>" href="javascript: void(0)"></a>
