@@ -8,18 +8,16 @@ PURPLE = "#673ab7"
 
 
 
+$(document).ready(function(){
 
-$(function() {
-  return $("#fonts").imagesLoaded(function() {
-    return $("#fonts").masonry({
-      itemSelector: ".box",
-      isFitWidth: true
+  $(function() {
+    return $("#fonts").imagesLoaded(function() {
+      return $("#fonts").masonry({
+        itemSelector: ".box",
+        isFitWidth: true
+      });
     });
   });
-});
-
-
-$(document).ready(function(){
 
   $(".fa.fa-arrow-circle-o-up.fa-2x.non-clicked").click(function(event){
     event.preventDefault()

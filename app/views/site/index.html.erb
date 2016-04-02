@@ -3,9 +3,9 @@
     <h1 class="sideh1">font</h1>
     <i class="fa fa-arrow-circle-up fa-2x"></i>
     <ul class="left">
-      <li>Latest</li>
-      <li>Most Popular</li>
-      <li>Curator</li>
+      <li><%= link_to "Latest", "/" %></li>
+      <li><%= link_to "Most Popular", "/" %></li>
+      <li><%= link_to "Curator", "#" %></li>
     </ul>
   </div>
   <div id="fonts" class="transitions-enabled">
@@ -28,6 +28,9 @@
         <% end %>
           <p class="votes" style="font-family: 'Montserrat', sans-serif;"><%= pluralize(f.get_upvotes.size, "vote") %></p>
         <% end %>
+
+
+
       </div>
     <% end %>
   </div>
