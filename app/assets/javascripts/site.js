@@ -1,6 +1,14 @@
 // # Place all the behaviors and hooks related to the matching controller here.
 // # All this logic will automatically be available in application.js.
 // # You can use CoffeeScript in this file: http://coffeescript.org/
+GREEN = "#8Bc34a"
+RED = "#F44336"
+YELLOW = "#ffeb3b"
+PURPLE = "#673ab7"
+
+
+
+
 $(function() {
   return $("#fonts").imagesLoaded(function() {
     return $("#fonts").masonry({
@@ -40,51 +48,95 @@ $(document).ready(function(){
     })
   })
 
-  $(".red-square").hover(function(){
-    var id = $(this).attr("id")
-    var headerTitle = $("h1" + "#" + id)
-    headerTitle.css({"color": "#F44336"})
-    $(this).css({"background-color": "#D32F2F"})
-  },function(){
-    var id = $(this).attr("id")
-    var headerTitle = $("h1" + "#" + id)
-    headerTitle.css({"color": "#111"})
-    $(this).css({"background-color": "#F44336"})
-  })
+  function hoverColors(){
+    $(".squares>li>div").hover(function(){
+      var id = $(this).attr("id")
+      var headerTitle = $("h1" + "#" + id)
 
-  $(".green-square").hover(function(){
-    var id = $(this).attr("id")
-    var headerTitle = $("h1" + "#" + id)
-    headerTitle.css({"color": "#8Bc34a"})
-    $(this).css({"background-color": "#8BC34A"})
-  },function(){
-    var id = $(this).attr("id")
-    var headerTitle = $("h1" + "#" + id)
-    headerTitle.css({"color": "#111"})
-    $(this).css({"background-color": "#689F38"})
-  })
+      if ($(this).hasClass("red-square")) {
+        redSquare(headerTitle)
+      }else if ($(this).hasClass("green-square")) {
+        greenSquare(headerTitle)
+      }else if ($(this).hasClass("purple-square")) {
+        purpleSquare(headerTitle)
+      }else if ($(this).hasClass("yellow-square")) {
+        yellowSquare(headerTitle)
+      }
+    },function(){
+      $(".red-square").css({"background-color": RED})
+      $(".green-square").css({"background-color": GREEN})
+      $(".purple-square").css({"background-color": PURPLE})
+      $(".yellow-square").css({"background-color": YELLOW})
+      $(".box>h1").css({"color": "#111"})
+    })
+  }
 
-  $(".yellow-square").hover(function(){
-    var id = $(this).attr("id")
-    var headerTitle = $("h1" + "#" + id)
-    headerTitle.css({"color": "#ffeb3b"})
-    $(this).css({"background-color": "#FBC02D"})
-  },function(){
-    var id = $(this).attr("id")
-    var headerTitle = $("h1" + "#" + id)
-    headerTitle.css({"color": "#111"})
-    $(this).css({"background-color": "#ffeb3b"})
-  })
+  function redSquare(headerTitle){
+    headerTitle.css({"color": RED})
+    $(".red-square").css({"background-color": "#D32F2F"})
+  }
 
-  $(".purple-square").hover(function(){
-    var id = $(this).attr("id")
-    var headerTitle = $("h1" + "#" + id)
-    headerTitle.css({"color": "#673ab7"})
-    $(this).css({"background-color": "#7B1FA2"})
-  },function(){
-    var id = $(this).attr("id")
-    var headerTitle = $("h1" + "#" + id)
-    headerTitle.css({"color": "#111"})
-    $(this).css({"background-color": "#673ab7"})
-  })
+  function greenSquare(headerTitle){
+    headerTitle.css({"color": GREEN})
+    $(".green-square").css({"background-color": "#689F38"})
+  }
+
+  function purpleSquare(headerTitle){
+    headerTitle.css({"color": PURPLE})
+    $(".purple-square").css({"background-color": "#7B1FA2"})
+  }
+
+  function yellowSquare(headerTitle){
+    headerTitle.css({"color": YELLOW})
+    $(".yellow-square").css({"background-color": "#FBC02D"})
+  }
+
+  hoverColors()
+  // $(".red-square").hover(function(){
+  //   var id = $(this).attr("id")
+  //   var headerTitle = $("h1" + "#" + id)
+  //   headerTitle.css({"color": "#F44336"})
+  //   $(this).css({"background-color": "#D32F2F"})
+  // },function(){
+  //   var id = $(this).attr("id")
+  //   var headerTitle = $("h1" + "#" + id)
+  //   headerTitle.css({"color": "#111"})
+  //   $(this).css({"background-color": "#F44336"})
+  // })
+
+  // $(".green-square").hover(function(){
+  //   var id = $(this).attr("id")
+  //   var headerTitle = $("h1" + "#" + id)
+  //   headerTitle.css({"color": "#8Bc34a"})
+  //   $(this).css({"background-color": "#8BC34A"})
+  // },function(){
+  //   var id = $(this).attr("id")
+  //   var headerTitle = $("h1" + "#" + id)
+  //   headerTitle.css({"color": "#111"})
+  //   $(this).css({"background-color": "#689F38"})
+  // })
+
+  // $(".yellow-square").hover(function(){
+  //   var id = $(this).attr("id")
+  //   var headerTitle = $("h1" + "#" + id)
+  //   headerTitle.css({"color": "#ffeb3b"})
+  //   $(this).css({"background-color": "#FBC02D"})
+  // },function(){
+  //   var id = $(this).attr("id")
+  //   var headerTitle = $("h1" + "#" + id)
+  //   headerTitle.css({"color": "#111"})
+  //   $(this).css({"background-color": "#ffeb3b"})
+  // })
+
+  // $(".purple-square").hover(function(){
+  //   var id = $(this).attr("id")
+  //   var headerTitle = $("h1" + "#" + id)
+  //   headerTitle.css({"color": "#673ab7"})
+  //   $(this).css({"background-color": "#7B1FA2"})
+  // },function(){
+  //   var id = $(this).attr("id")
+  //   var headerTitle = $("h1" + "#" + id)
+  //   headerTitle.css({"color": "#111"})
+  //   $(this).css({"background-color": "#673ab7"})
+  // })
 })
