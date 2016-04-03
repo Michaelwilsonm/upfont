@@ -1,0 +1,204 @@
+/**** Transitions ****/
+
+
+.transitions-enabled.masonry,
+.transitions-enabled.masonry .masonry-brick {
+  -webkit-transition-duration: 0.7s;
+     -moz-transition-duration: 0.7s;
+      -ms-transition-duration: 0.7s;
+       -o-transition-duration: 0.7s;
+          transition-duration: 0.7s;
+}
+
+.transitions-enabled.masonry {
+  -webkit-transition-property: height, width;
+     -moz-transition-property: height, width;
+      -ms-transition-property: height, width;
+       -o-transition-property: height, width;
+          transition-property: height, width;
+}
+
+.transitions-enabled.masonry  .masonry-brick {
+  -webkit-transition-property: left, right, top;
+     -moz-transition-property: left, right, top;
+      -ms-transition-property: left, right, top;
+       -o-transition-property: left, right, top;
+          transition-property: left, right, top;
+}
+
+
+/* disable transitions on container */
+.transitions-enabled.infinite-scroll.masonry {
+  -webkit-transition-property: none;
+     -moz-transition-property: none;
+      -ms-transition-property: none;
+       -o-transition-property: none;
+          transition-property: none;
+}
+/* line 5, /Users/w1Lsonm/Desktop/Workspaces/ruby/upfont/app/assets/stylesheets/site.scss */
+h1 {
+  text-align: center;
+}
+
+/* line 9, /Users/w1Lsonm/Desktop/Workspaces/ruby/upfont/app/assets/stylesheets/site.scss */
+p:first-of-type {
+  font-size: 7px;
+  text-align: center;
+}
+
+/* line 14, /Users/w1Lsonm/Desktop/Workspaces/ruby/upfont/app/assets/stylesheets/site.scss */
+p:nth-of-type(2) {
+  font-size: 10px;
+  text-align: center;
+}
+
+/* line 19, /Users/w1Lsonm/Desktop/Workspaces/ruby/upfont/app/assets/stylesheets/site.scss */
+p:last-of-type {
+  font-size: 15px;
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+/* line 25, /Users/w1Lsonm/Desktop/Workspaces/ruby/upfont/app/assets/stylesheets/site.scss */
+a {
+  margin: 20px 0px 0px 100px;
+}
+
+/* line 29, /Users/w1Lsonm/Desktop/Workspaces/ruby/upfont/app/assets/stylesheets/site.scss */
+.fa.fa-arrow-circle-o-up.fa-2x {
+  color: #bbb;
+  text-decoration: none;
+  margin-left: 46%;
+}
+
+/* line 35, /Users/w1Lsonm/Desktop/Workspaces/ruby/upfont/app/assets/stylesheets/site.scss */
+.fa.fa-arrow-circle-o-up.fa-2x.liked {
+  color: #E91E63;
+  text-decoration: none;
+  margin-left: 46%;
+}
+
+/* line 42, /Users/w1Lsonm/Desktop/Workspaces/ruby/upfont/app/assets/stylesheets/site.scss */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+/* line 47, /Users/w1Lsonm/Desktop/Workspaces/ruby/upfont/app/assets/stylesheets/site.scss */
+.box {
+  margin-top: 60px;
+  width: 300px;
+  height: 250px;
+  padding: 0px;
+  margin-bottom: 100px;
+}
+
+/* line 55, /Users/w1Lsonm/Desktop/Workspaces/ruby/upfont/app/assets/stylesheets/site.scss */
+div.content {
+  margin-left: 250px;
+}
+
+/* line 59, /Users/w1Lsonm/Desktop/Workspaces/ruby/upfont/app/assets/stylesheets/site.scss */
+div.side {
+  position: fixed;
+  height: 100%;
+  top: 0;
+  left: 0;
+  width: 280px;
+  padding: 10px;
+}
+
+/* line 68, /Users/w1Lsonm/Desktop/Workspaces/ruby/upfont/app/assets/stylesheets/site.scss */
+.squares {
+  list-style-type: none;
+  text-align: center;
+  margin-right: 45px;
+}
+
+/* line 74, /Users/w1Lsonm/Desktop/Workspaces/ruby/upfont/app/assets/stylesheets/site.scss */
+.squares > li {
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+}
+
+/* line 80, /Users/w1Lsonm/Desktop/Workspaces/ruby/upfont/app/assets/stylesheets/site.scss */
+.red-square {
+  width: 20px;
+  height: 20px;
+  background-color: #F44336;
+  border-radius: 25px;
+  margin: 10px;
+}
+
+/* line 89, /Users/w1Lsonm/Desktop/Workspaces/ruby/upfont/app/assets/stylesheets/site.scss */
+.green-square {
+  width: 20px;
+  height: 20px;
+  background-color: #8BC34A;
+  border-radius: 25px;
+  margin: 10px;
+}
+
+/* line 97, /Users/w1Lsonm/Desktop/Workspaces/ruby/upfont/app/assets/stylesheets/site.scss */
+.yellow-square {
+  width: 20px;
+  height: 20px;
+  background-color: #FFEB3B;
+  border-radius: 25px;
+  margin: 10px;
+}
+
+/* line 105, /Users/w1Lsonm/Desktop/Workspaces/ruby/upfont/app/assets/stylesheets/site.scss */
+.purple-square {
+  width: 20px;
+  height: 20px;
+  background-color: #673AB7;
+  border-radius: 25px;
+  margin: 10px;
+}
+
+/* line 113, /Users/w1Lsonm/Desktop/Workspaces/ruby/upfont/app/assets/stylesheets/site.scss */
+.sideh1 {
+  text-align: middle;
+  margin-top: 70px;
+  font-family: 'Raleway', sans-serif;
+  opacity: 0.8;
+}
+
+/* line 120, /Users/w1Lsonm/Desktop/Workspaces/ruby/upfont/app/assets/stylesheets/site.scss */
+i {
+  position: absolute;
+  color: #F48FB1;
+  left: 75px;
+  top: 85px;
+  z-index: -1;
+}
+
+/* line 128, /Users/w1Lsonm/Desktop/Workspaces/ruby/upfont/app/assets/stylesheets/site.scss */
+.left {
+  list-style-type: none;
+  margin-top: 80px;
+}
+
+/* line 133, /Users/w1Lsonm/Desktop/Workspaces/ruby/upfont/app/assets/stylesheets/site.scss */
+.left > li > a {
+  margin: 10px 0px 0px 20px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+
+
+
+ */
