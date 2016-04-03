@@ -21,9 +21,18 @@ ActiveRecord::Schema.define(version: 20160330082114) do
     t.string   "font_family"
     t.string   "weight"
     t.string   "styles_by"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
+    t.datetime "created_at",                     null: false
+    t.datetime "updated_at",                     null: false
+    t.integer  "cached_votes_total", default: 0
+    t.integer  "cached_votes_score", default: 0
+    t.integer  "cached_votes_up",    default: 0
+    t.integer  "cached_votes_down",  default: 0
   end
+
+  add_index "fonts", ["cached_votes_down"], name: "index_fonts_on_cached_votes_down", using: :btree
+  add_index "fonts", ["cached_votes_score"], name: "index_fonts_on_cached_votes_score", using: :btree
+  add_index "fonts", ["cached_votes_total"], name: "index_fonts_on_cached_votes_total", using: :btree
+  add_index "fonts", ["cached_votes_up"], name: "index_fonts_on_cached_votes_up", using: :btree
 
   create_table "sessions", force: :cascade do |t|
     t.integer "ip"

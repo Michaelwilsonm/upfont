@@ -7,5 +7,7 @@ Rails.application.routes.draw do
     end
   end
 
+  get "site/most_popular"
+
 
 end
