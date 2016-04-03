@@ -6,7 +6,7 @@ class Font < ActiveRecord::Base
   end
 
   def self.created_at
-    Font.order(created_at: :desc)
+    Font.order(created_at: :asc)
   end
 
 end
