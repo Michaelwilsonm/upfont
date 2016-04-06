@@ -46,7 +46,7 @@ html, body {
 
 .box {
   margin-top: 60px;
-  width: 300px;
+  width: 330px;
   height: 250px;
   padding: 0px;
   margin-bottom: 100px;
@@ -68,7 +68,7 @@ div.side {
 .squares {
   list-style-type: none;
   text-align: center;
-  margin-right: 45px;
+  margin-right: 55px;
 }
 
 .squares>li {
@@ -136,9 +136,11 @@ i {
   font-weight: 400;
 }
 
-
-
-
-
-
-
+.hex {
+  font-weight: bold;
+  position: absolute;
+  opacity: 0.5;
+  margin-left: -10px;
+  margin-top: 5px;
+  display: none;
+}

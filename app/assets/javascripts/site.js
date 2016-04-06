@@ -49,20 +49,22 @@ $(document).ready(function(){
   function hoverColors(){
     $(".squares>li>div").hover(function(){
       var id = $(this).closest("ul").attr("id")
-      console.log(id)
       var headerTitle = $("h1" + "#" + id)
       headerTitle.css({"color": "red"})
-      console.log(headerTitle)
       var divEle = $(this)
 
       if ($(this).hasClass("red-square")) {
         redSquare(headerTitle, divEle)
+        $(this).next(".red").show(50)
       }else if ($(this).hasClass("green-square")) {
         greenSquare(headerTitle, divEle)
+        $(this).next(".green").show(50)
       }else if ($(this).hasClass("purple-square")) {
         purpleSquare(headerTitle, divEle)
+        $(this).next(".purple").show(50)
       }else if ($(this).hasClass("yellow-square")) {
         yellowSquare(headerTitle, divEle)
+        $(this).next(".yellow").show(50)
       }
     },function(){
       $(".red-square").css({"background-color": RED})
@@ -70,6 +72,7 @@ $(document).ready(function(){
       $(".purple-square").css({"background-color": PURPLE})
       $(".yellow-square").css({"background-color": YELLOW})
       $(".box>h1").css({"color": "#111"})
+      $(".hex").hide()
     })
   }
 
@@ -92,6 +95,7 @@ $(document).ready(function(){
     headerTitle.css({"color": YELLOW})
     divelement.css({"background-color": "#FBC02D"})
   }
+
 
   hoverColors()
 })
