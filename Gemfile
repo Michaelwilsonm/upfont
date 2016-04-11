@@ -26,3 +26,4 @@ group :production do
   gem 'rails_12factor'
 end
 
+gem 'react-rails', '~> 1.6.0'

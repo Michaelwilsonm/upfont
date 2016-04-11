@@ -5,7 +5,7 @@
     <ul class="left">
       <li><%= link_to "Latest", "/" %></li>
       <li><%= link_to "Most Popular", site_most_popular_path %></li>
-      <li><%= link_to "Curator", "#" %></li>
+      <%= react_component('Main', :prerender => true) %>
     </ul>
   </div>
   <div id="fonts" class="transitions-enabled">

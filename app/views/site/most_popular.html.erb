@@ -15,10 +15,10 @@
         <p><%= f.weight %></p>
         <p>Created by <%= f.styles_by %></p>
           <ul class="squares" id="<%= f.id %>">
-            <li><div class="red-square"></div></li>
-            <li><div class="green-square"></div></li>
-            <li><div class="yellow-square"></div></li>
-            <li><div class="purple-square"></div></li>
+            <li><div class="red-square"></div><div class="red hex">#8BC34A</div></li>
+            <li><div class="green-square"></div><div class="green hex">#F44336</div></li>
+            <li><div class="yellow-square"></div><div class="yellow hex">#FFEB3B</div></li>
+            <li><div class="purple-square"></div><div class="purple hex">#673AB7</div></li>
           </ul>
         <% if @voter.voted_for? f %>
           <a class="fa fa-arrow-circle-o-up fa-2x liked" id="<%= f.id %>" href="javascript: void(0)"></a>
