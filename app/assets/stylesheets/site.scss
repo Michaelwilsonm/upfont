@@ -49,7 +49,7 @@ html, body {
   width: 330px;
   height: 250px;
   padding: 0px;
-  margin-bottom: 100px;
+  margin-bottom: 140px;
 }
 
 div.content {
@@ -143,10 +143,47 @@ i {
 }
 
 .hex {
-  font-weight: bold;
   position: absolute;
-  opacity: 0.5;
+  opacity: 0.3;
   margin-left: -10px;
   margin-top: 5px;
   display: none;
 }
+
+#modal {
+  height: 200px;
+  width: 200px;
+  position:absolute;
+  left: -150px;
+  top: 300px;
+  opacity: 0;
+}
+
+#modal>img {
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+}
+
+#modal>.fa{
+  margin-top: 20px;
+  margin-left: 25px;
+  color: black;
+}
+
+#modal>.fa:hover {
+  color: #ddd;
+  text-decoration: none;
+}
+
+#modal>p {
+  font-size: 10px;
+  margin-top: 10px;
+  margin-left: -27px;
+}
+
+
+
+
+
+
