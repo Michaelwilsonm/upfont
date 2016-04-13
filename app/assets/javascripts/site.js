@@ -97,23 +97,26 @@ $(document).ready(function(){
   }
   hoverColors()
 
+  function curatorClick(){
+    var click = 0
+    $(".left li:eq(2)").click(function(e){
+      click ++
+      e.preventDefault()
+      if (click % 2 == 1) {
+        $("#modal").stop().animate({
+          left: "35px",
+          opacity: "1"
+        }, 300)
+      }else{
+        $("#modal").stop().animate({
+          left: "-150px",
+          opacity: "0"
+        }, 300)
+      }
+    })
+  }
 
-  var click = 0
-  $(".left li:eq(2)").click(function(e){
-    click ++
-    e.preventDefault()
-    if (click % 2 == 1) {
-      $("#modal").stop().animate({
-        left: "35px",
-        opacity: "1"
-      }, 300)
-    }else{
-      $("#modal").stop().animate({
-        left: "-150px",
-        opacity: "0"
-      }, 300)
-    }
-  })
+  curatorClick()
 
 })
 
