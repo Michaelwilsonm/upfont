@@ -103,11 +103,13 @@ $(document).ready(function(){
       click ++
       e.preventDefault()
       if (click % 2 == 1) {
+        $(this).children().css( "color", "#F48FB1" )
         $("#modal").stop().animate({
           left: "35px",
           opacity: "1"
         }, 300)
       }else{
+        $(this).children().css( "color", "#000" )
         $("#modal").stop().animate({
           left: "-150px",
           opacity: "0"
@@ -119,6 +121,7 @@ $(document).ready(function(){
   curatorClick()
 
 })
+
 
 
 

@@ -4,7 +4,7 @@
     <i class="fa fa-arrow-circle-up fa-2x"></i>
     <ul class="left">
       <li><%= link_to "Latest", "/" %></li>
-      <li><%= link_to "Most Popular", site_most_popular_path %></li>
+      <li><%= link_to_unless_current("Most Popular", {action: "most_popular"}) %></li>
       <li><%= link_to "Curator" %></li>
       <div id="modal">
         <img src="../assets/bondi.jpg" alt=""><br>
