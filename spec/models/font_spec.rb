@@ -12,8 +12,6 @@ RSpec.describe Font, type: :model do
 
   it { expect(font).to validate_presence_of(:font_family) }
 
-  it { expect(font).to validate_presence_of(:font_family) }
-
   it { expect(font).to validate_presence_of(:styles_by) }
 
 end
