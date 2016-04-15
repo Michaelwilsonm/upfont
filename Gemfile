@@ -15,6 +15,11 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 group :development, :test do
   gem 'byebug'
+  gem 'rspec-rails', '~> 3.0'
+  gem 'shoulda-matchers', '~> 3.1'
+  gem 'shoulda-callback-matchers', '~> 1.1.1'
+  gem 'factory_girl_rails'
+  gem 'faker', '~> 1.6', '>= 1.6.3'
 end
 
 group :development do
