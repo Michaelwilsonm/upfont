@@ -99,7 +99,7 @@ $(document).ready(function(){
 
   function curatorClick(){
     var click = 0
-    $(".left li:eq(2)").click(function(e){
+    $(".left li:eq(3)").click(function(e){
       click ++
       e.preventDefault()
       if (click % 2 == 1) {

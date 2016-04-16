@@ -19,9 +19,15 @@ class SiteController < ApplicationController
   end
 
   def most_popular
+    @font_all = Font.all
     @font_order = Font.vote_order
     session[:voting_id] = request.remote_ip
     @voter = Session.find_or_create_by(ip: session[:voting_id])
   end
+
+  def new
+    @font_all = Font.all
+  end
+
 
 end
