@@ -24,12 +24,14 @@ p:last-of-type {
 
 
 .fa.fa-arrow-circle-o-up.fa-2x {
+  margin-top: 20px;
   color: #bbb;
   text-decoration: none;
   margin-left: 46%;
 }
 
 .fa.fa-arrow-circle-o-up.fa-2x.liked {
+  margin-top: 20px;
   color: #E91E63;
   text-decoration: none;
   margin-left: 46%;
@@ -42,18 +44,19 @@ html, body {
 }
 
 .box {
-  margin-top: 60px;
-  width: 330px;
+  margin-top: 70px;
+  width: 280px;
   height: 250px;
   padding: 0px;
   margin-bottom: 140px;
 }
 
 div.content {
-  margin-left: 250px;
+  margin-left: 275px;
 }
 
 div.side {
+  background-color: #eee;
   position: fixed;
   height: 100%;
   top: 0;
