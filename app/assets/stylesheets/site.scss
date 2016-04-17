@@ -20,7 +20,6 @@ p:nth-of-type(2) {
 }
 
 p:last-of-type {
-  font-size: 15px;
   text-align: center;
   margin-bottom: 0px;
 }
@@ -164,7 +163,7 @@ i {
   width: 200px;
   position:absolute;
   left: -150px;
-  top: 300px;
+  top: 350px;
   opacity: 0;
 }
 
@@ -175,7 +174,7 @@ i {
 }
 
 #modal>.fa{
-  margin-top: 20px;
+  margin-top: 50px;
   margin-left: 25px;
   color: black;
 }
@@ -208,6 +207,6 @@ i {
 .example {
   position: relative;
   top: 140px;
-  left: 100px;
+  left: 20px;
 }
 

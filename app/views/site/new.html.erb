@@ -1,6 +1,6 @@
 <div class="container">
   <div class="row">
-    <div class="col-md-4">
+    <div class="col-md-4 col-sm-4 col-xs-6">
       <div class="side">
         <h1 class="sideh1">font</h1>
         <i class="fa fa-arrow-circle-up fa-2x"></i>
@@ -19,7 +19,7 @@
         </div>
       </div>
     </div>
-    <div class="col-md-4 new_form">
+    <div class="col-md-4 col-sm-8 col-xs-6 new_form">
       <div class="form-group">
       <%= form_for @font, url: {action: "create"}  do |f| %>
         <%= f.label "Font Name" %>
@@ -36,7 +36,7 @@
       <% end %>
       </div>
     </div>
-    <div class="col-md-4 example">
+    <div class="col-md-4 col-sm-6 col-xs-7 example">
       <div id="fonts">
         <div class="box">
           <h1 id="<%= @first_font.id %>" style="<%= @first_font.font_family %>"><%= @first_font.name %></h1>
