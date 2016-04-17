@@ -26,8 +26,25 @@ class SiteController < ApplicationController
   end
 
   def new
+    @font = Font.new
+    @first_font = Font.first
     @font_all = Font.all
   end
 
+  def create
+    @first_font = Font.first
+    @font_all = Font.all
+    @font = Font.create(font_params)
+    if @font.save
+      redirect_to "/"
+    else
+      render "new"
+    end
+  end
 
+  private
+
+    def font_params
+      params.require(:font).permit(:name, :font_family, :weight, :styles_by, :font_url)
+    end
 end

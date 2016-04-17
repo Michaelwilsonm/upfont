@@ -1,1 +1,55 @@
-<h1> add new font here </h1>
+<div class="container">
+  <div class="row">
+    <div class="col-md-4">
+      <div class="side">
+        <h1 class="sideh1">font</h1>
+        <i class="fa fa-arrow-circle-up fa-2x"></i>
+        <ul class="left">
+          <li><%= link_to_unless_current("Latest", { action: "index" }) %></li>
+          <li><%= link_to "Most Popular", site_most_popular_path %></li>
+          <li><%= link_to "Add Font", new_site_path %></li>
+          <li><%= link_to "Curator" %></li>
+        </ul>
+        <div id="modal">
+          <img src="assets/bondi.jpg" alt=""><br>
+          <p><em>created by Michael Wilson</em></p>
+          <a href="https://www.facebook.com/michael.wilson.10485" target="_blank" class="fa fa-facebook fa-2x"></a>
+          <a href="mailto:1987wilsonm.mw@gmail.com?Subject=Hello" target="_top" class="fa fa-send fa-2x"></a>
+          <a href="https://github.com/Michaelwilsonm" target="_blank" class="fa fa-github fa-2x"></a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 new_form">
+      <div class="form-group">
+      <%= form_for @font, url: {action: "create"}  do |f| %>
+        <%= f.label "Font Name" %>
+        <%= f.text_field :name, placeholder: "eg. indie flower", class: "form-control" %><br>
+        <%= f.label "Font Family (CSS Selector)" %>
+        <%= f.text_field :font_family, placeholder: "eg. font-family: 'Indie Flower', cursive;", class: "form-control" %><br>
+        <%= f.label "Font Weight" %>
+        <%= f.text_field :weight, placeholder: "eg. Normal 400", class: "form-control" %><br>
+        <%= f.label "Font Creator" %>
+        <%= f.text_field :styles_by, placeholder: "eg. Kimberly Geswein", class: "form-control" %><br>
+        <%= f.label "Font URL" %>
+        <%= f.text_area :font_url, placeholder: "eg. https://fonts.googleapis.com/css?family=Indie+Flower", class: "form-control" %><br>
+        <%= f.submit "Create my Font", class: "btn btn-success" %>
+      <% end %>
+      </div>
+    </div>
+    <div class="col-md-4 example">
+      <div id="fonts">
+        <div class="box">
+          <h1 id="<%= @first_font.id %>" style="<%= @first_font.font_family %>"><%= @first_font.name %></h1>
+          <p><%= @first_font.weight %></p>
+          <p>Created by <%= @first_font.styles_by %></p>
+            <ul class="squares" id="<%= @first_font.id %>">
+              <li><div class="red-square"></div><div class="red hex">#8BC34A</div></li>
+              <li><div class="green-square"></div><div class="green hex">#F44336</div></li>
+              <li><div class="yellow-square"></div><div class="yellow hex">#FFEB3B</div></li>
+              <li><div class="purple-square"></div><div class="purple hex">#673AB7</div></li>
+            </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

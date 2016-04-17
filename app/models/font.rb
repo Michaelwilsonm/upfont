@@ -2,7 +2,7 @@ class Font < ActiveRecord::Base
   validates :name, presence: true
   validates :font_family, presence: true
   validates :styles_by, presence: true
-  # validates :created_at, presence: true
+  validates :font_url, presence: true
 
   acts_as_votable
 
@@ -11,7 +11,7 @@ class Font < ActiveRecord::Base
   end
 
   def self.created_at
-    Font.order(created_at: :desc)
+    Font.order(created_at: :asc)
   end
 
 end

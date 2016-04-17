@@ -2,6 +2,9 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+$orange-light: #FFA726;
+$orange-dark: #F57C00;
+
 h1 {
   text-align: center;
 }
@@ -188,8 +191,23 @@ i {
   margin-left: -27px;
 }
 
+.btn.btn-success {
+  background-color: $orange-light;
+  border-color: $orange-light;
+}
 
+.btn.btn-success:hover {
+  background-color: $orange-dark;
+  border-color: $orange-dark;
+}
 
+.new_form {
+  margin-top: 100px;
+}
 
-
+.example {
+  position: relative;
+  top: 140px;
+  left: 100px;
+}
 
