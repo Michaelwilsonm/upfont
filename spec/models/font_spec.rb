@@ -14,4 +14,6 @@ RSpec.describe Font, type: :model do
 
   it { expect(font).to validate_presence_of(:styles_by) }
 
+  it { expect(font).to validate_presence_of(:font_url) }
+
 end

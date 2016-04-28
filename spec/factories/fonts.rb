@@ -1,6 +1,7 @@
 FactoryGirl.define do
   factory :font do
     name Faker::Name.name
+    font_url Faker::Name.name
     font_family Faker::Name.name
     weight Faker::Number.number(3)
     styles_by Faker::Name.name

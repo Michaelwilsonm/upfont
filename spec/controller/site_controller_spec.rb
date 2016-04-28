@@ -20,7 +20,7 @@ RSpec.describe SiteController, :type => :controller do
       get :most_popular
       expect(response.status).to eq(200)
     end
-    it "renders the index template" do
+    it "renders the most popular template" do
       expect(subject).to render_template(:most_popular)
     end
   end
