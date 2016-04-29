@@ -32800,8 +32800,6 @@ RED = "#F44336"
 YELLOW = "#ffeb3b"
 PURPLE = "#673ab7"
 
-
-
 $(document).ready(function(){
 
   $(function() {
@@ -32894,14 +32892,17 @@ $(document).ready(function(){
   function curatorClick(){
     var click = 0
     $(".left li:eq(2)").click(function(e){
+      console.log(this)
       click ++
       e.preventDefault()
       if (click % 2 == 1) {
+        $(this).children().css( "color", "#F48FB1" )
         $("#modal").stop().animate({
           left: "35px",
           opacity: "1"
         }, 300)
       }else{
+        $(this).children().css( "color", "#000" )
         $("#modal").stop().animate({
           left: "-150px",
           opacity: "0"
@@ -32913,6 +32914,7 @@ $(document).ready(function(){
   curatorClick()
 
 })
+
 
 
 

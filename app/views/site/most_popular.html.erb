@@ -1,3 +1,18 @@
+<div class="top">
+  <ul class="top_ul">
+    <li><%= link_to "Latest", "/" %></li>
+      <li><%= link_to_unless_current("Most Popular", {action: "most_popular"}) %></li>
+    <li></li>
+    <li></li>
+  </ul>
+  <div class="tainer">
+    <img src="../assets/bondi.jpg" alt=""><br>
+    <p><em>created by Michael Wilson</em></p>
+    <a href="https://www.facebook.com/michael.wilson.10485" target="_blank" class="fa fa-facebook fa-2x"></a>
+    <a href="mailto:1987wilsonm.mw@gmail.com?Subject=Hello" target="_top" class="fa fa-send fa-2x"></a>
+    <a href="https://github.com/Michaelwilsonm" target="_blank" class="fa fa-github fa-2x"></a>
+  </div>
+</div>
 <div class="content">
   <div class="side">
     <h1 class="sideh1">font</h1>
@@ -5,8 +20,8 @@
     <ul class="left">
       <li><%= link_to "Latest", "/" %></li>
       <li><%= link_to_unless_current("Most Popular", {action: "most_popular"}) %></li>
-      <li></li>
       <li><%= link_to "Curator" %></li>
+      <li></li>
       <div id="modal">
         <img src="../assets/bondi.jpg" alt=""><br>
         <p><em>created by Michael Wilson</em></p>
