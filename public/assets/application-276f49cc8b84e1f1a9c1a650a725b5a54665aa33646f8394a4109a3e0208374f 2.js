@@ -32800,8 +32800,6 @@ RED = "#F44336"
 YELLOW = "#ffeb3b"
 PURPLE = "#673ab7"
 
-
-
 $(document).ready(function(){
 
   $(function() {

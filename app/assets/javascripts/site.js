@@ -53,16 +53,16 @@ $(document).ready(function(){
 
       if ($(this).hasClass("red-square")) {
         redSquare(headerTitle, divEle)
-        $(this).next(".red").show(50)
+        $(this).next(".red").show(100)
       }else if ($(this).hasClass("green-square")) {
         greenSquare(headerTitle, divEle)
-        $(this).next(".green").show(50)
+        $(this).next(".green").show(100)
       }else if ($(this).hasClass("purple-square")) {
         purpleSquare(headerTitle, divEle)
-        $(this).next(".purple").show(50)
+        $(this).next(".purple").show(100)
       }else if ($(this).hasClass("yellow-square")) {
         yellowSquare(headerTitle, divEle)
-        $(this).next(".yellow").show(50)
+        $(this).next(".yellow").show(100)
       }
     },function(){
       $(".red-square").css({"background-color": RED})
